@@ -894,6 +894,7 @@ function showResults() {
     }
 
     html += `<strong>Your Answer:</strong> ${userAnswers[i]?.answer ?? 'Not answered'}<br/>`;
+    html += `<strong>Correct Answer:</strong> ${q.options?.[q.correct] ?? q.answer}<br/>`;
     html += `<strong>Explanation:</strong> ${q.explanation ?? 'N/A'}`;
     html += `</div>`;
   });
